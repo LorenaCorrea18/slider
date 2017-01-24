@@ -1,0 +1,162 @@
+/* Slideshow container */
+
+    .slideshow-container {
+      height: 100%;
+      margin: auto;
+      max-width: 1000px;
+      position: relative;
+      background: #020f19;
+    }
+    #slides {
+      display: none
+    }
+
+/* Next & previous buttons */
+    .prev, .next {
+      border-radius: 25px;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      margin: -22px 10px 0 10px;
+      padding: 5px 10px;
+      position: absolute;
+      top: 50%;
+      transition: 0.6s ease;
+      width: auto;
+    }
+
+    #slides .slidesjs-previous {
+      margin-right: 5px;
+      float: left;
+      z-index: 10;
+    }
+
+/* Position the "next button" to the right */
+    .next {
+      border-radius: 25px;
+      right: 0;
+    }
+
+    #slides .slidesjs-next {
+      margin-right: 5px;
+      float: left;
+      z-index: 10;
+    }
+/* On hover, add a black background color with a little bit see-through */
+
+    .prev:hover, .next:hover {
+      background-color: rgba(0, 17, 53, 0.8);
+    }
+
+/* Bullets */
+
+    .slidesjs-pagination {
+      margin: -13%  0  13% 0;
+      list-style: none;
+      text-align: center;
+    }
+
+    .slidesjs-pagination li {
+      display: block;
+      overflow: hidden;
+      position: relative;
+      z-index: 15;
+      background-color: rgba(0, 17, 53, 0.9);
+      border-radius: 50%;
+      cursor:pointer;
+      display: inline-block;
+      height: 13px;
+      margin: 0 2px;
+      transition: background-color 0.6s ease;   
+      width: 13px;
+    }
+
+    .slidesjs-pagination li a {
+      position: relative;
+      z-index: 15;
+      ock; */
+      margin: 10px;
+      padding-top: 15px;
+      margin: 10px;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-color: #eee;
+      cursor:pointer;
+      display: inline-block;
+      height: 13px;
+      margin: 0px;
+      width: 13px;
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+/* Image slider */
+    .slider-img{
+      width: 100%;
+    }
+
+/* text */
+    .text {
+      background: #020f19;
+      color: #fff;
+      font-size: 15px;
+      margin-top: -5px;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+    }
+
+    .p-text {
+      padding: 10px 20px;
+      text-align: left;
+    }
+
+/* Number top text */
+
+    .numbertext {
+      background: rgba(2, 15, 25, 0.8);
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+
+
+/* For tablets & smart phones */
+
+    @media (max-width: 767px) {
+      body {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .container {
+        width: auto
+      }
+    }
+
+/* For smartphones */
+    @media (max-width: 480px) {
+      .container {
+        width: auto
+      }
+    }
+
+/* For smaller displays like laptops */
+    @media (min-width: 768px) and (max-width: 979px) {
+      .container {
+        width: 724px
+      }
+    }
+
+/* For larger displays */
+    @media (min-width: 1200px) {
+      .container {
+        width: 100%;
+      }
+    }
